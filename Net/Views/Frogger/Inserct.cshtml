@@ -1,0 +1,28 @@
+﻿@model FroggerViewModel
+
+<div class="row">
+    <div class="col-6">
+
+        <div class="card">
+            <div class="card-header">
+                <h5>Inerisci un nuovo punteggio</h5>
+
+            </div>
+            <div class="card-body">
+        <form asp-controller="Frogger" asp-action="InserctFrogger" method="post">
+            <div class="mb-3">
+                <label class="form-label">Inserisci punteggio</label>
+                <input asp-for=Punteggio type="number" class="form-control"/>
+            </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Salva</button>
+        </div>
+        </form>
+            </div>
+            <div class="card-footer">
+
+            </div>
+        </div>
+    </div>
+
+</div>
