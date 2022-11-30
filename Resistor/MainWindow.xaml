@@ -1,0 +1,54 @@
+﻿<Window x:Class="Esame_1.MainWindow " Background="LightSlateGray"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Esame_1"
+        mc:Ignorable="d"
+        Title="Esame" ResizeMode="NoResize" Height="300" Width="400">
+    <Border Padding="10">
+        <StackPanel>
+            <TextBlock Text="Dimmi il colore del resistor" FontWeight="Bold" Margin="10 10" />
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+                <ComboBox x:Name="Colori" Padding="2" SelectionChanged="Colori_SelectionChanged"  Grid.Column="0" Margin="10 0">
+                    <ComboBoxItem>Nero</ComboBoxItem>
+                    <ComboBoxItem>Marrone</ComboBoxItem>
+                    <ComboBoxItem>Rosso</ComboBoxItem>
+                    <ComboBoxItem>Arancio</ComboBoxItem>
+                    <ComboBoxItem>Giallo</ComboBoxItem>
+                    <ComboBoxItem>Verde</ComboBoxItem>
+                    <ComboBoxItem>Blu</ComboBoxItem>
+                    <ComboBoxItem>Viola</ComboBoxItem>
+                    <ComboBoxItem>Grigio</ComboBoxItem>
+                    <ComboBoxItem>Bianco</ComboBoxItem>
+                </ComboBox>
+            </Grid>
+
+            <TextBlock Text="Valore di resistenza"  FontWeight="Bold" Margin="10 10 0 0" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+                
+            <TextBox x:Name="NoteText" IsReadOnly="True" Grid.Column="0" Padding="2" Margin="10 10"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                  
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="ColorBox" IsReadOnly="True" Grid.Column="1" Padding="40" Margin="10 10"/>
+
+            </Grid>
+
+
+        </StackPanel>
+    </Border>
+</Window>
